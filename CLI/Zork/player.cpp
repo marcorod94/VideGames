@@ -18,7 +18,7 @@ bool Player::Go(const std::vector<std::string>& args) {
 	}
 
 	if (exit->locked) {
-		std::cout << "\nThat exit is locked.\n";
+		std::cout << "\nThe exit " << exit->name << " is locked.\n";
 		return false;
 	}
 
