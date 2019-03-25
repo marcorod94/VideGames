@@ -35,20 +35,6 @@ This is a command line game here are the instructions:
 	-    **take** or **pick (item) in (item):** to take an item that is inside other.
 	-   **drop** or **put (item) on (item):** to put an item inside other.
 
-Here is the map of this particular game:
-```mermaid
-graph LR
-subgraph World
-A[Forest]--> B[Forest II]
-B --> D[Forest III]
-D --> F[Clearing]
-C --> F
-A --> C
-subgraph  House
-C[House] --> |down|E[Basement]
-end
-end
-```
 
 ## License
 
