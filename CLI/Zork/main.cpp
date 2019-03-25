@@ -32,7 +32,7 @@ int main() {
 			}
 		}
 
-		if (args.size() > 0 && Same(args[0], "quit")) {
+		if (args.size() > 0 && Compare(args[0], "quit")) {
 			break;
 		}
 

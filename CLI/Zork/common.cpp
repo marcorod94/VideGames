@@ -1,14 +1,14 @@
 #include "common.h"
 
-bool Same(const std::string& a, const std::string& b) {
+bool Compare(const std::string& a, const std::string& b) {
 	return _stricmp(a.c_str(), b.c_str()) == 0;
 }
 
-bool Same(const char* a, const std::string& b) {
+bool Compare(const char* a, const std::string& b) {
 	return _stricmp(a, b.c_str()) == 0;
 }
 
-bool Same(const std::string& a, const char* b) {
+bool Compare(const std::string& a, const char* b) {
 	return _stricmp(a.c_str(), b) == 0;
 }
 

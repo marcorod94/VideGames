@@ -66,23 +66,23 @@ void World::GameLoop() {
 
 bool World::HandleOneWordInput(std::vector<std::string>& args) {
 	bool ret = true;
-	if (Same(args[0], "look") || Same(args[0], "l")) {
+	if (Compare(args[0], "look") || Compare(args[0], "l")) {
 		player->Look(args);
-	} else if (Same(args[0], "stats") || Same(args[0], "st")) {
+	} else if (Compare(args[0], "stats") || Compare(args[0], "st")) {
 		player->Stats();
-	} else if (Same(args[0], "inventory") || Same(args[0], "i")) {
+	} else if (Compare(args[0], "inventory") || Compare(args[0], "i")) {
 		player->Inventory();
-	} else if (Same(args[0], "north") || Same(args[0], "n")) {
+	} else if (Compare(args[0], "north") || Compare(args[0], "n")) {
 		MovePlayer(args, "north");
-	} else if (Same(args[0], "south") || Same(args[0], "s")) {
+	} else if (Compare(args[0], "south") || Compare(args[0], "s")) {
 		MovePlayer(args, "south");
-	} else if (Same(args[0], "east") || Same(args[0], "e")) {
+	} else if (Compare(args[0], "east") || Compare(args[0], "e")) {
 		MovePlayer(args, "east");
-	} else if (Same(args[0], "west") || Same(args[0], "w")) {
+	} else if (Compare(args[0], "west") || Compare(args[0], "w")) {
 		MovePlayer(args, "west");
-	} else if (Same(args[0], "up") || Same(args[0], "u")) {
+	} else if (Compare(args[0], "up") || Compare(args[0], "u")) {
 		MovePlayer(args, "up");
-	} else if (Same(args[0], "down") || Same(args[0], "d")) {
+	} else if (Compare(args[0], "down") || Compare(args[0], "d")) {
 		MovePlayer(args, "down");
 	} else {
 		ret = false;
@@ -92,23 +92,23 @@ bool World::HandleOneWordInput(std::vector<std::string>& args) {
 
 bool World::HandleTwoWordInput(std::vector<std::string>& args) {
 	bool ret = true;
-	if (Same(args[0], "look") || Same(args[0], "l")) {
+	if (Compare(args[0], "look") || Compare(args[0], "l")) {
 		player->Look(args);
-	} else if (Same(args[0], "go")) {
+	} else if (Compare(args[0], "go")) {
 		player->Go(args);
-	} else if (Same(args[0], "take") || Same(args[0], "pick")) {
+	} else if (Compare(args[0], "take") || Compare(args[0], "pick")) {
 		player->Take(args);
-	} else if (Same(args[0], "drop") || Same(args[0], "put")) {
+	} else if (Compare(args[0], "drop") || Compare(args[0], "put")) {
 		player->Drop(args);
-	} else if (Same(args[0], "equip") || Same(args[0], "eq")) {
+	} else if (Compare(args[0], "equip") || Compare(args[0], "eq")) {
 		player->Equip(args);
-	} else if (Same(args[0], "unequip") || Same(args[0], "uneq")) {
+	} else if (Compare(args[0], "unequip") || Compare(args[0], "uneq")) {
 		player->UnEquip(args);
-	} else if (Same(args[0], "examine") || Same(args[0], "ex")) {
+	} else if (Compare(args[0], "examine") || Compare(args[0], "ex")) {
 		player->Examine(args);
-	} else if (Same(args[0], "attack") || Same(args[0], "at")) {
+	} else if (Compare(args[0], "attack") || Compare(args[0], "at")) {
 		player->Attack(args);
-	} else if (Same(args[0], "loot") || Same(args[0], "lt")) {
+	} else if (Compare(args[0], "loot") || Compare(args[0], "lt")) {
 		player->Loot(args);
 	} else {
 		ret = false;
@@ -118,13 +118,13 @@ bool World::HandleTwoWordInput(std::vector<std::string>& args) {
 
 bool World::HandleFourWordInput(std::vector<std::string>& args) {
 	bool ret = true;
-	if (Same(args[0], "unlock") || Same(args[0], "unlk")) {
+	if (Compare(args[0], "unlock") || Compare(args[0], "unlk")) {
 		player->UnLock(args);
-	} else if (Same(args[0], "lock") || Same(args[0], "lk")) {
+	} else if (Compare(args[0], "lock") || Compare(args[0], "lk")) {
 		player->Lock(args);
-	} else if (Same(args[0], "take") || Same(args[0], "pick")) {
+	} else if (Compare(args[0], "take") || Compare(args[0], "pick")) {
 		player->Take(args);
-	} else if (Same(args[0], "drop") || Same(args[0], "put")) {
+	} else if (Compare(args[0], "drop") || Compare(args[0], "put")) {
 		player->Drop(args);
 	} else {
 		ret = false;
