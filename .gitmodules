@@ -1,0 +1,15 @@
+[submodule "unity-2d-cowboy-platform"]
+	path = unity-2d-cowboy-platform
+	url = https://github.com/marcorod94/unity-2d-cowboy-platform.git
+[submodule "libgdx-flappy-demo"]
+	path = libgdx-flappy-demo
+	url = https://github.com/marcorod94/libgdx-flappy-demo.git
+[submodule "unreal-scaperoom"]
+	path = unreal-scaperoom
+	url = https://github.com/marcorod94/unreal-scaperoom.git
+[submodule "cli-bull-cow"]
+	path = cli-bull-cow
+	url = https://github.com/marcorod94/cli-bull-cow.git
+[submodule "cli-zork"]
+	path = cli-zork
+	url = https://github.com/marcorod94/cli-zork.git
