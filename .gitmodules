@@ -13,3 +13,6 @@
 [submodule "cli-zork"]
 	path = cli-zork
 	url = https://github.com/marcorod94/cli-zork.git
+[submodule "unity-galaxy-shooter"]
+	path = unity-galaxy-shooter
+	url = https://github.com/marcorod94/unity-galaxy-shooter.git
